@@ -88,7 +88,7 @@ const LivestockWeightCalculator: React.FC = () => {
     if (heartGirth[0] && bodyLength[0]) {
       calculateWeight();
     }
-  }, [heartGirth, bodyLength, animalType, measurementUnit, calculateWeight]);
+  }, [heartGirth, bodyLength, animalType, measurementUnit]);
 
 
   return (
