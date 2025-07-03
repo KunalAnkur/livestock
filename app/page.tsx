@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from 'react';
-import { Scale, Download, Calculator, User, BarChart3, Activity, TrendingUp, Beef } from 'lucide-react';
+import { Scale, Download, BarChart3 } from 'lucide-react';
 
 interface WeightResult {
   weight: number;
@@ -99,7 +99,7 @@ const LivestockWeightCalculator: React.FC = () => {
           <p className="text-gray-600">Estimate your livestock weight using body measurements</p>
         </div>
         <div className="flex items-center gap-4">
-          <button className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 border-teal-300 text-teal-700 hover:bg-teal-50">
+          <button className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border bg-background hover:text-accent-foreground h-10 px-4 py-2 border-teal-300 text-teal-700 hover:bg-teal-50">
             Export Data
           </button>
           <button className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-gradient-to-r from-teal-500 to-cyan-500 hover:from-teal-600 hover:to-cyan-600 text-white h-10 px-4 py-2">
@@ -114,7 +114,7 @@ const LivestockWeightCalculator: React.FC = () => {
           <div className="bg-white/80 backdrop-blur-sm border-0 shadow-xl rounded-xl">
             <div className="space-y-1.5 p-6">
               <h3 className="text-xl font-semibold text-gray-800 leading-none tracking-tight">Animal Details</h3>
-              <p className="text-sm text-muted-foreground text-gray-600">Enter your livestock measurements and details</p>
+              <p className="text-sm text-muted-foreground">Enter your livestock measurements and details</p>
             </div>
             <div className="p-6 pt-0 space-y-6">
               {/* System Toggle */}
@@ -229,7 +229,7 @@ const LivestockWeightCalculator: React.FC = () => {
 
               <button
                 onClick={calculateWeight}
-                className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 w-full bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white h-11 py-3 text-lg font-semibold"
+                className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 w-full bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white h-11 py-3 font-semibold"
               >
                 Calculate Weight
               </button>
@@ -298,7 +298,7 @@ const LivestockWeightCalculator: React.FC = () => {
           <div className="bg-white/80 backdrop-blur-sm border-0 shadow-xl rounded-xl">
             <div className="p-6 space-y-3">
               <button
-                className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground w-full border-teal-300 text-teal-700 hover:bg-teal-50 h-10 px-4 py-2"
+                className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border  bg-background hover:text-accent-foreground w-full border-teal-300 text-teal-700 hover:bg-teal-50 h-10 px-4 py-2"
                 onClick={() => {
                   setHeartGirth([100]);
                   setBodyLength([150]);
@@ -309,7 +309,7 @@ const LivestockWeightCalculator: React.FC = () => {
                 Reset Values
               </button>
               <button
-                className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground w-full border-blue-300 text-blue-700 hover:bg-blue-50 h-10 px-4 py-2"
+                className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border  bg-background hover:text-accent-foreground w-full border-blue-300 text-blue-700 hover:bg-blue-50 h-10 px-4 py-2"
               >
                 <Download className="h-4 w-4 mr-2" />
                 Export Report
