@@ -1,9 +1,7 @@
 // components/Sidebar.tsx
 "use client";
-import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Scale, Beef, TrendingUp, Activity, User } from "lucide-react";
-import { useState } from "react";
+import { Scale, Beef, User } from "lucide-react";
 // const [activeNav, setActiveNav] = useState('livestock-calc');
 const navItems = [
     { id: 'livestock-calc', label: 'Livestock Calc', icon: Scale, href: '/' },
