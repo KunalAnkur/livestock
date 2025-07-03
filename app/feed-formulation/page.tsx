@@ -102,7 +102,7 @@ export default function FeedFormulationCalculator() {
                             <ResultCard label="Crude Protein (gm)" value={crudeProtein.toFixed(0)} bg="rose" />
                         </div>
 
-                        {milkProduction > 0 && (
+                        {/* {milkProduction > 0 && (
                             <div className="mt-4">
                                 <p className="text-sm font-medium text-gray-700 mb-1">Formulas Used:</p>
                                 <div className="text-sm text-gray-600 bg-gray-50 p-3 rounded-md font-mono space-y-1">
@@ -110,7 +110,7 @@ export default function FeedFormulationCalculator() {
                                     <div>Crude Protein = (Milk Production × 96) + 515</div>
                                 </div>
                             </div>
-                        )}
+                        )} */}
                     </div>
 
                     <div className="bg-white/80 backdrop-blur-sm shadow-xl rounded-xl p-6 space-y-3">
